@@ -21,11 +21,14 @@ class ViewController: UIViewController {
     }
 
     func checkParity(x:Int) -> String{
+        //戻り値の型を指定
         
         if x % 2 == 0{
             parity = "偶数"
+            //xを２で割った余りが0なら偶数
         }else {
             parity = "奇数"
+            //それ以外は奇数
         }
         return parity
     }
